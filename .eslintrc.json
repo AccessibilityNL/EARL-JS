@@ -1,0 +1,26 @@
+{
+    "env": {
+        "es2021": true,
+        "browser": true,
+        "node": true
+    },
+    "extends": ["eslint:recommended", "prettier"],
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "ignorePatterns": ["dist/*.js"],
+    "rules": {
+        "indent": ["error", 2],
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["error", "double"],
+        "semi": ["error", "never"]
+    },
+    "overrides": [
+        {
+            "files": ["./test/**"],
+            "env": {
+                "mocha": true
+            }
+        }
+    ]
+}

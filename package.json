@@ -1,0 +1,35 @@
+{
+    "name": "earljs",
+    "version": "0.0.0",
+    "description": "Utility to convert test data into JSON-LD EARL format.",
+    "type": "module",
+    "main": "src/index.js",
+    "browser": "dist/earljs.umd.js",
+    "scripts": {
+        "clean:dev": "rimraf ./develop",
+        "bundle:build": "rollup -c",
+        "bundle:dev": "rollup -c -w",
+        "build": "run-s bundle:build",
+        "dev": "run-s clean:dev bundle:dev",
+        "lint": "eslint --fix ./src/**.js",
+        "test": "mocha"
+    },
+    "keywords": [
+        "data",
+        "json-ld",
+        "EARL",
+        "Evaluation and Reporting Language"
+    ],
+    "author": "Roel Antonisse - Deul, rvantonisse",
+    "license": "ISC",
+    "devDependencies": {
+        "chai": "^4.3.4",
+        "eslint": "^7.0.0",
+        "eslint-config-prettier": "^8.3.0",
+        "mocha": "^9.1.3",
+        "npm-run-all": "^4.1.5",
+        "prettier": "2.4.1",
+        "rimraf": "^3.0.2",
+        "rollup": "^2.58.0"
+    }
+}
