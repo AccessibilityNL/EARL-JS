@@ -1,3 +1,9 @@
 import Earl from "./Earl.js"
 
-export default Earl
+function earlDocument() {
+  const newEarlDocument = new Earl()
+
+  return newEarlDocument
+}
+
+export default earlDocument
