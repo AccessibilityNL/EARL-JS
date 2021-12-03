@@ -1,9 +1,12 @@
+import JsonldDocument from "./models/JsonldDocument.model.js"
+
 /**
  * Earl class
- * Creates a json-ld container for EARL
+ * Creates a json-ld document for EARL
  */
-class Earl {
+class Earl extends JsonldDocument {
   constructor() {
+    super()
   }
 }
 
