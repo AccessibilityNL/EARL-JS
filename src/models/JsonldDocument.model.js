@@ -2,8 +2,8 @@
  * [JsonldDocument description]
  */
 class JsonldDocument {
-  constructor() {
-    this["@context"] = {}
+  constructor(context = {}) {
+    this["@context"] = context
 
     this["@graph"] = []
   }
