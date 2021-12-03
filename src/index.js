@@ -1,7 +1,7 @@
-import Earl from "./Earl.js"
+import EarlDocument from "./models/EarlDocument.model.js"
 
 function earlDocument() {
-  const newEarlDocument = new Earl()
+  const newEarlDocument = new EarlDocument()
 
   return newEarlDocument
 }
